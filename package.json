@@ -1,6 +1,6 @@
 {
   "name": "download-instagram-picture",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extension of Google Chrome for download Instagram Images with one click right",
   "main": "background.js",
   "scripts": {

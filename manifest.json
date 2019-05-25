@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Download Instagram Picture",
-  "version": "0.1",
+  "version": "0.1.1",
   "permissions": [
     "tabs",
     "downloads",
@@ -16,17 +16,21 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["jquery-3.2.1.slim.min.js", "content.js"]
+      "js": [
+        "jquery-3.2.1.slim.min.js",
+        "content.js"
+      ]
     }
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
- "browser_action": {
+  "browser_action": {
     "default_title": "Credencial FdW",
     "default_icon": "ico.png",
     "default_popup": "popup.html"
   }
-
 }
