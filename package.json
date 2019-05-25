@@ -4,7 +4,8 @@
   "description": "Extension of Google Chrome for download Instagram Images with one click right",
   "main": "background.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
