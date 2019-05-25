@@ -1,0 +1,27 @@
+{
+  "name": "download-instagram-picture",
+  "version": "0.1.0",
+  "description": "Extension of Google Chrome for download Instagram Images with one click right",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasp402/Download-Instagram-Picture.git"
+  },
+  "keywords": [
+    "Download",
+    "images",
+    "instagram"
+  ],
+  "author": "Jesús A. Pérez S.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasp402/Download-Instagram-Picture/issues"
+  },
+  "homepage": "https://github.com/jasp402/Download-Instagram-Picture#readme",
+  "devDependencies": {
+    "standard-version": "^6.0.1"
+  }
+}
