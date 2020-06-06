@@ -20,7 +20,9 @@ document.addEventListener('contextmenu', (event) => {
 
     //console.log(mediaSource); //print mediaSource
 var fileName = mediaSource.split('/').pop().split('?')[0];
-download(mediaSource, fileName)
+    if(mediaSource.indexOf('instagram')>-1 || mediaSource.indexOf('facebook')>-1) {
+        download(mediaSource, fileName);
+    }
 
 /** Para abrir en otra ventana **/
 //uriContent = "data:application/octet-stream," + mediaSource;
