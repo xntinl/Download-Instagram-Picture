@@ -1,4 +1,4 @@
-# Download picture oneClick (Instagram, Facebook & WhatsApp)
+# Download picture oneClick 
 ![GitHub manifest version](https://img.shields.io/github/manifest-json/v/jasp402/Download-Instagram-Picture.svg)<br>
 
 ## Description
