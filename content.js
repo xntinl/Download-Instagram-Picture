@@ -10,17 +10,17 @@ function download(content, filename)
     a[0].click();
 
     a.remove();
-
-    chrome.runtime.sendMessage({"message": "open_new_tab", "content": content, "filename":filename});
+    if (content.indexOf('whatsapp') === -1) {
+        chrome.runtime.sendMessage({"message": "open_new_tab", "content": content, "filename":filename});
+    }
 }
 
 document.addEventListener('contextmenu', (event) => {
     const elements = document.elementsFromPoint(event.clientX, event.clientY);
     const mediaSource = elements.find(element => /img|video/gi.test(element.tagName)).getAttribute('src');
 
-    //console.log(mediaSource); //print mediaSource
 var fileName = mediaSource.split('/').pop().split('?')[0];
-    if(mediaSource.indexOf('instagram')>-1 || mediaSource.indexOf('facebook')>-1) {
+    if (mediaSource.indexOf('instagram') > -1 || mediaSource.indexOf('facebook') > -1 || mediaSource.indexOf('whatsapp') > -1) {
         download(mediaSource, fileName);
     }
 
