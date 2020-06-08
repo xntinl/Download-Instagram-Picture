@@ -20,7 +20,7 @@ document.addEventListener('contextmenu', (event) => {
     const mediaSource = elements.find(element => /img|video/gi.test(element.tagName)).getAttribute('src');
 
 var fileName = mediaSource.split('/').pop().split('?')[0];
-    if (mediaSource.indexOf('instagram') > -1 || mediaSource.indexOf('facebook') > -1 || mediaSource.indexOf('whatsapp') > -1) {
+    if (mediaSource.indexOf('instagram') > -1 || mediaSource.indexOf('scontent') > -1 || mediaSource.indexOf('whatsapp') > -1) {
         download(mediaSource, fileName);
     }
 
@@ -30,11 +30,6 @@ var fileName = mediaSource.split('/').pop().split('?')[0];
 //mediaSource && window.open(uriContent, 'neuesDokument');
 
 });
-
-
-
-
-//
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         if( request.message === "clicked_browser_action" ) {
