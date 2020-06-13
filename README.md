@@ -29,3 +29,9 @@ Extension of **Google Chrome** for download Images/Videos from social networks w
 ## 🤝Contributing
 Read our contributing guide and let's build a better together.
 We welcome all contributions. Please read our CONTRIBUTING.md first. You can submit any ideas as pull requests or as GitHub issues.
+
+1.  clone repository! `git clone https://github.com/jasp402/Download-Instagram-Picture.git  `
+2.  Use `dev` branch: `git checkout -b dev`
+3.  Commit your changes: `git commit -am 'Add some feature'`
+4.  Push to the branch: `git push origin dev`
+5.  Submit a pull request :D
